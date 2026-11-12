@@ -6,13 +6,12 @@
   --dark-bg: #000b1a;
 }
 
-*,
-html,
-body {
-  user-select: none !important;
-  -webkit-user-select: none !important;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
+/* Texto selecionável (recrutadores copiam e-mail e nomes); imagens e botões não. */
+img,
+svg,
+button {
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .center-nav {
