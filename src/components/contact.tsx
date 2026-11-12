@@ -11,20 +11,23 @@ const Contact = () => {
   return (
     <section className="mx-auto center-nav" id="contact">
       <div className="text-white mt-14 md:mt-20 lg:mt-24 font-semibold space-y-6 md:space-y-8">
-        <h3 className="text-2xl md:text-3xl lg:text-5xl font-semibold">
+        <h2 className="text-2xl md:text-3xl lg:text-5xl font-semibold">
           {t("contact.title")}{" "}
           <span className="blue-color border-r-3 pr-2">
             {t("contact.title.highlight")}
           </span>
-        </h3>
+        </h2>
 
         <div className="flex flex-col pt-4 md:pt-6 space-y-3 md:space-y-4 text-sm md:text-base lg:text-lg font-light">
-          <p className="flex items-center gap-2 md:gap-3">
-            <MdOutlineEmail className="blue-color w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7" />
-            <span className="hover:text-[#319ff9] transition-colors">
+          <div>
+            <a
+              className="inline-flex items-center gap-2 md:gap-3 underline hover:text-[#319ff9] transition-colors"
+              href="mailto:kauassf8@outlook.com"
+            >
+              <MdOutlineEmail className="blue-color w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7" />
               kauassf8@outlook.com
-            </span>
-          </p>
+            </a>
+          </div>
 
           <div>
             <a
@@ -41,12 +44,12 @@ const Contact = () => {
           <div>
             <a
               className="inline-flex items-center gap-2 md:gap-3 underline hover:text-[#319ff9] transition-colors"
-              href="https://github.com/KauaSimplicioDEV"
+              href="https://github.com/KSimplicioDEV"
               target="_blank"
               rel="noopener noreferrer"
             >
               <SiGithub className="blue-color w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7" />
-              KauaSimplicioDEV
+              KSimplicioDEV
             </a>
           </div>
         </div>

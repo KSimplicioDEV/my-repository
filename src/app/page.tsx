@@ -5,6 +5,7 @@ import Header from "../components/header";
 import Projects from "../components/projects";
 import Skills from "../components/skills";
 import Contact from "../components/contact";
+import Experience from "../components/experience";
 import { LanguageProvider } from "../contexts/LanguageContext";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <main className="dark-bg min-h-screen pb-10">
         <Header />
         <About />
+        <Experience />
         <Skills />
         <Projects />
         <Contact />
